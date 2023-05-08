@@ -80,7 +80,7 @@ function Contact() {
               id="submit-button"
               disabled={state.submitting}
               onClick={() => setIsOpen(true)}
-              className="bg-slate-700 w-full w-1/3 self-center rounded-lg py-2 hover:bg-slate-500 transition duration-300"
+              className="bg-slate-700 w-1/3 self-center rounded-lg py-2 hover:bg-slate-500 transition duration-300"
             >
               Send
             </button>

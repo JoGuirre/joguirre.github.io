@@ -44,7 +44,7 @@ function Card({ title, content, color }) {
     <div className="relative flex flex-col flex-1 group">
       <div
         id="card-container"
-        className={`relative p-4 flex flex-1 flex-col items-center border border-slate-700 rounded-lg bg-slate-900 before:absolute before:w-full before:h-2/3 before:z-[-99] before:border before:rounded-lg before:transition before:duration-300 ${shadowColors[color]}`}
+        className={`relative p-4 flex flex-1 flex-col items-center border border-slate-700 rounded-lg bg-slate-900 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[-99] before:hover:z-[0] before:rounded-lg before:transition before:duration-300 ${shadowColors[color]}`}
       >
         <div id="card-title-container" className="mb-2">
           <h1
@@ -52,18 +52,18 @@ function Card({ title, content, color }) {
           >
             {title}
           </h1>
+          <div className="relative">
+            <div
+              className={`absolute inset-0 mt-1 self-center w-full h-[1px] bg-gradient-to-r from-transparent ${gradientColors[color]} to-transparent opacity-0 transition duration-300 group-hover:opacity-100`}
+            >
+              &nbsp;
+            </div>
+          </div>
         </div>
         <div id="card-content-container">
           <p className="text-md text-slate-300 text-opacity-60 group-hover:text-opacity-100 transition duration-300 px-4 text-center">
             {content}
           </p>
-        </div>
-      </div>
-      <div className="relative">
-        <div
-          className={`absolute inset-0 self-center mt-2 w-full h-[1px] bg-gradient-to-r from-transparent ${gradientColors[color]} to-transparent opacity-0 transition duration-300 group-hover:opacity-100`}
-        >
-          &nbsp;
         </div>
       </div>
     </div>
