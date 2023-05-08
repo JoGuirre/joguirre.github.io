@@ -24,11 +24,8 @@ function NavBarList() {
     <ul className="flex gap-4">
       {navBarListItems.map((item) => {
         return (
-          <li
-            id={`#${item}`}
-            className="text-white rounded-lg p-2 text-center m-1 hover:cursor-pointer hover:bg-gray-600"
-          >
-            {item}
+          <li className="text-white rounded-lg p-2 text-center m-1 hover:cursor-pointer hover:bg-gray-600">
+            <a href={`#${item}`}>{item}</a>
           </li>
         );
       })}

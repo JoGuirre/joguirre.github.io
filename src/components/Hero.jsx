@@ -2,10 +2,10 @@ import React from "react";
 
 function Hero() {
   return (
-    <div id="hero-container" className="h-screen flex">
+    <div id="home" className="h-screen flex">
       <div
         id="hero-card-container"
-        className="flex relative justify-between px-8 w-full mt-8 mb-20 mx-12 rounded-lg flex border border-gray-500 bg-slate-900 rounded-lg text-slate-300 overflow-hidden"
+        className="flex relative justify-between px-8 w-full mt-8 mb-20 mx-12 rounded-lg flex border border-slate-700 bg-slate-900 rounded-lg text-slate-300 overflow-hidden"
       >
         <div
           id="hero-card-container-bg-text"

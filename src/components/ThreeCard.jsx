@@ -2,10 +2,7 @@ import React from "react";
 
 function ThreeCard() {
   return (
-    <div
-      id="threecard-container"
-      className="flex justify-center my-4 mx-12 gap-12"
-    >
+    <div id="about" className="flex justify-center mb-4 mx-12 gap-12">
       <Card
         title="Passion for Web"
         content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
