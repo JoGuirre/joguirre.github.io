@@ -1,23 +1,18 @@
 import React from "react";
+import { aboutContent } from "../content/aboutContent";
 
 function ThreeCard() {
   return (
     <div id="about" className="flex justify-center mb-4 mx-12 gap-12">
-      <Card
-        title="Passion for Web"
-        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        color="purple"
-      />
-      <Card
-        title="Adaptive"
-        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        color="blue"
-      />
-      <Card
-        title="Quality"
-        content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-        color="orange"
-      />
+      {aboutContent.map((section) => {
+        return (
+          <Card
+            title={section.title}
+            content={section.content}
+            color={section.color}
+          />
+        );
+      })}
     </div>
   );
 }

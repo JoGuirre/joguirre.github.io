@@ -66,7 +66,7 @@ function Contact() {
                 name="message"
                 placeholder="I'd like a website built with: x, y, z"
                 required
-                className="flex-1 rounded-md px-4 py-2 text-white text-opacity-60 bg-slate-700"
+                className="flex-1 rounded-md px-4 py-2 text-white text-opacity-60 bg-slate-700 resize-none"
               ></textarea>
               <ValidationError
                 prefix="Message"
