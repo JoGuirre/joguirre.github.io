@@ -9,7 +9,7 @@ function Hero() {
       >
         <div
           id="hero-card-container-bg-text"
-          className="absolute top-0 text-slate-400 text-opacity-[5%] font-bold text-[300px]"
+          className="absolute top-0 text-slate-400 text-opacity-[2%] font-bold text-[300px]"
         >
           JA WEBDEV
         </div>

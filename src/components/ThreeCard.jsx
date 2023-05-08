@@ -30,9 +30,9 @@ function Card({ title, content, color }) {
   };
 
   const shadowColors = {
-    purple: "before:hover:shadow-[0_0_50px_10px_#ff00f7]",
-    blue: "before:hover:shadow-[0_0_50px_10px_#00ccff]",
-    orange: "before:hover:shadow-[0_0_50px_10px_#ff9100]",
+    purple: "before:hover:shadow-[0_0_10px_2px_rgba(255,0,247,0.7)]",
+    blue: "before:hover:shadow-[0_0_10px_2px_rgba(0,204,255,0.7)]",
+    orange: "before:hover:shadow-[0_0_10px_2px_rgba(255,145,0,0.7)]",
   };
 
   const gradientColors = {
@@ -41,7 +41,7 @@ function Card({ title, content, color }) {
     orange: "via-[#ff9100]",
   };
   return (
-    <div className="relative flex flex-col flex-1 group">
+    <div className="relative flex flex-col flex-1 group hover:scale-110 transition duration-300">
       <div
         id="card-container"
         className={`relative p-4 flex flex-1 flex-col items-center border border-slate-700 rounded-lg bg-slate-900 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[-99] before:hover:z-[0] before:rounded-lg before:transition before:duration-300 ${shadowColors[color]}`}

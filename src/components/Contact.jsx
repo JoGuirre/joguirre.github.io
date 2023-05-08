@@ -23,7 +23,7 @@ function Contact() {
             id="contact-form"
             action="https://formspree.io/f/meqwpvaq"
             onSubmit={handleSubmit}
-            className="flex flex-col m-12 p-4 gap-y-4 border border-slate-700 rounded-lg"
+            className="flex flex-col m-12 py-4 px-20 gap-y-4 rounded-lg"
           >
             <div className="flex">
               <input
@@ -32,17 +32,17 @@ function Contact() {
                 id="name"
                 name="name"
                 required
-                className="flex-1 rounded-md p-1 text-white text-opacity-60 bg-slate-700"
+                className="flex-1 rounded-md px-4 py-2 text-white text-opacity-60 bg-slate-700"
               />
             </div>
             <div className="flex">
               <input
-                placeholder="stronghand@gmail.com"
+                placeholder="thatsmy@strong.hand"
                 type="email"
                 id="email"
                 name="email"
                 required
-                className="flex-1 rounded-md p-1 text-white text-opacity-60 bg-slate-700"
+                className="flex-1 rounded-md px-4 py-2 text-white text-opacity-60 bg-slate-700"
               />
             </div>
             <ValidationError
@@ -57,7 +57,7 @@ function Contact() {
                 id="subject"
                 name="subject"
                 required
-                className="flex-1 rounded-md p-1 text-white text-opacity-60 bg-slate-700"
+                className="flex-1 rounded-md px-4 py-2 text-white text-opacity-60 bg-slate-700"
               />
             </div>
             <div className="flex">
@@ -66,7 +66,7 @@ function Contact() {
                 name="message"
                 placeholder="I'd like a website built with: x, y, z"
                 required
-                className="flex-1 rounded-md p-1 text-white text-opacity-60 bg-slate-700"
+                className="flex-1 rounded-md px-4 py-2 text-white text-opacity-60 bg-slate-700"
               ></textarea>
               <ValidationError
                 prefix="Message"
@@ -75,15 +75,17 @@ function Contact() {
               />
             </div>
 
-            <button
-              type="submit"
-              id="submit-button"
-              disabled={state.submitting}
-              onClick={() => setIsOpen(true)}
-              className="bg-slate-700 w-1/3 self-center rounded-lg py-2 hover:bg-slate-500 transition duration-300"
-            >
-              Send
-            </button>
+            <div className="flex bg-white rounded-lg w-2/3 bg-gradient-to-tr from-customPurple to-customBlue self-center">
+              <button
+                type="submit"
+                id="submit-button"
+                disabled={state.submitting}
+                onClick={() => setIsOpen(true)}
+                className="bg-slate-700 w-full rounded-lg py-2 bg-slate-700 hover:bg-opacity-0 transition duration-300"
+              >
+                Send
+              </button>
+            </div>
           </form>
         </div>
       </div>
