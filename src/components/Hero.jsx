@@ -2,10 +2,10 @@ import React from "react";
 
 function Hero() {
   return (
-    <div id="hero-container" className="h-screen py-8 flex">
+    <div id="hero-container" className="h-screen flex">
       <div
         id="hero-card-container"
-        className="flex relative justify-between px-8 w-full mx-12 p-12 my-4 rounded-lg flex border border-gray-500 bg-slate-900 rounded-lg text-slate-300 overflow-hidden"
+        className="flex relative justify-between px-8 w-full mt-8 mb-20 mx-12 rounded-lg flex border border-gray-500 bg-slate-900 rounded-lg text-slate-300 overflow-hidden"
       >
         <div
           id="hero-card-container-bg-text"
@@ -15,7 +15,7 @@ function Hero() {
         </div>
         <div
           id="left-side"
-          className="flex flex-col justify-center items-center w-1/2"
+          className="flex flex-col justify-center items-center w-1/2 z-10"
         >
           <h1 className="text-5xl font-bold mb-6">
             Hi, I'm{" "}
