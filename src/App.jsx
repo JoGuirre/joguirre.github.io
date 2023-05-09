@@ -3,8 +3,7 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import ThreeCard from "./components/ThreeCard";
 import Contact from "./components/Contact";
-
-import BgGrid from "./assets/bggrid.svg";
+import TechStack from "./components/TechStack";
 
 function App() {
   return (
@@ -18,6 +17,7 @@ function App() {
             <NavBar />
             <Hero />
             <ThreeCard />
+            <TechStack />
 
             {/* <Projects /> */}
             <Contact />
