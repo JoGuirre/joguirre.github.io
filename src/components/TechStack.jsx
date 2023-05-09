@@ -7,9 +7,15 @@ function TechStack() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carousel = useRef(null);
 
+  const shadowColors = {
+    purple: "before:hover:shadow-[0_0_10px_2px_rgba(255,0,247,0.7)]",
+    blue: "before:hover:shadow-[0_0_10px_2px_rgba(0,204,255,0.7)]",
+    orange: "before:hover:shadow-[0_0_10px_2px_rgba(255,145,0,0.7)]",
+  };
+
   const movePrev = () => {
     if (currentIndex > 0) {
-      setCurrentIndex((prevState) => prevState - 1 / 3);
+      setCurrentIndex((prevState) => prevState - 1);
     }
   };
 
@@ -18,7 +24,7 @@ function TechStack() {
       carousel.current !== null &&
       carousel.current.offsetWidth * currentIndex <= maxScrollWidth.current
     ) {
-      setCurrentIndex((prevState) => prevState + 1 / 3);
+      setCurrentIndex((prevState) => prevState + 1);
     }
   };
 
@@ -50,7 +56,7 @@ function TechStack() {
       <div className="flex justify-around gap-16 items-center absolute w-full h-full">
         <button
           onClick={movePrev}
-          className="h-full bg-gradient-to-t from-customPurple to-customBlue rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-0 transition duration-300"
+          className="h-full bg-gradient-to-br from-customPurple from-[-50%] to-customBlue to-[150%] rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-30 transition duration-300"
           disabled={isDisabled("prev")}
         >
           <GrPrevious />
@@ -58,7 +64,7 @@ function TechStack() {
         </button>
         <button
           onClick={moveNext}
-          className="h-full bg-gradient-to-b from-customPurple to-customBlue rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-0 transition duration-300"
+          className="h-full bg-gradient-to-tr from-customPurple from-[-50%] to-customBlue to-[150%] rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-30 transition duration-300"
           disabled={isDisabled("next")}
         >
           <GrNext />
@@ -68,22 +74,26 @@ function TechStack() {
       <div className="mx-96 flex relative overflow-hidden">
         <div
           ref={carousel}
-          className="carousel-container relative flex gap-2 overflow-hidden scroll-smooth z-0"
+          className="carousel-container relative px-4 h-24 flex items-center gap-2 overflow-hidden scroll-smooth z-0"
         >
           {techStackFileArr.map((tech, index) => {
             return (
               <div
                 key={index}
-                className="carousel-item flex flex-col items-center justify-center text-center relative border border-slate-700 w-64 h-20 bg-slate-900 rounded-lg snap-start"
+                className="carousel-item flex flex-col items-center justify-center hover:scale-110 hover:shadow-[0_0_1px_1px_#8fe9ff] transition duration-300 text-center relative border border-slate-700 h-20 bg-slate-900 rounded-lg snap-start"
               >
-                <div className="h-full w-full aspect-square block flex flex-col justify-around items-center z-0">
+                <a
+                  href={tech.link}
+                  target="_blank"
+                  className="h-full w-full aspect-square block flex flex-col justify-around items-center z-0"
+                >
                   <tech.componentName
                     size="2rem"
                     color={tech.color}
                     className=""
                   />
                   <h3 className="text-white text-xs">{tech.name}</h3>
-                </div>
+                </a>
               </div>
             );
           })}
