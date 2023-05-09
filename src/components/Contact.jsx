@@ -6,10 +6,7 @@ function Contact() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div id="contact" className="my-8">
-      {/* <h1 id="" className="text-left pl-6 text-3xl font-bold mt-6 pb-3">
-        Contact Me
-      </h1> */}
-      <div className="border border-slate-700 flex mx-12 rounded-lg justify-around bg-slate-900">
+      <div className="border border-slate-700 flex mx-12 rounded-lg justify-around bg-gradient-to-tr from-gray-900 to-slate-800">
         <div className="w-1/2 text-center flex flex-col justify-center items-center">
           <h1 className="text-4xl font-bold mb-2">Need a website?</h1>
           <h2 className="text-2xl font-semibold mb-4">Drop a line here!</h2>
@@ -18,12 +15,12 @@ function Contact() {
             website, I'm your guy
           </h3>
         </div>
-        <div className="w-1/2">
+        <div className="w-1/3 my-12 py-8 px-12 border border-slate-700 bg-gradient-to-bl from-gray-900 to-slate-800 shadow-[2px_2px_1px_1px_#000000] rounded-lg">
           <form
             id="contact-form"
             action="https://formspree.io/f/meqwpvaq"
             onSubmit={handleSubmit}
-            className="flex flex-col m-12 py-4 px-20 gap-y-4 rounded-lg"
+            className="flex flex-col py-4 gap-y-4 rounded-lg"
           >
             <div className="flex">
               <input

@@ -16,7 +16,10 @@ function NavBar() {
       id="navbar-container"
       className=" z-50 sticky top-0 flex justify-center text-white text-opacity-40 hover:text-opacity-100 transition duration-150"
     >
-      <div className="flex w-full px-4 h-12 justify-between bg-black border-b border-slate-700 group">
+      <div className="flex w-full h-12 justify-between bg-black relative group">
+        <div className="absolute bg-gradient-to-r from-transparent via-customBlue to-transparent opacity-60 group-hover:opacity-100 transition duration-300 bottom-0 h-[1px] w-full">
+          &nbsp;
+        </div>
         <div className="pl-40 flex">
           <ul className="flex gap-4">
             {socialLinksItems.map((item) => {
@@ -47,7 +50,7 @@ function NavBarList() {
     <ul className="flex gap-4">
       {navBarListItems.map((item) => {
         return (
-          <li className="rounded-lg p-2 text-center m-1 hover:cursor-pointer hover:bg-gray-600">
+          <li className="rounded-lg p-2 text-center m-1 hover:cursor-pointer hover:bg-gray-600 transition duration-200">
             <a href={`#${item}`}>{item}</a>
           </li>
         );
@@ -58,7 +61,7 @@ function NavBarList() {
 
 function SocialLinks({ name, Icon, link }) {
   return (
-    <li className="rounded-lg p-2 text-center m-1 hover:cursor-pointer hover:bg-gray-600">
+    <li className="rounded-lg p-2 text-center m-1 hover:cursor-pointer hover:bg-gray-600 transition duration-200">
       <a href={link} target="_blank" className="flex items-center gap-x-2">
         <div>
           <Icon size="1.1rem" />
@@ -69,18 +72,17 @@ function SocialLinks({ name, Icon, link }) {
   );
 }
 
-SocialLinks.propTypes = {
-  Icon: PropTypes.element,
-};
-
 function MyLogo() {
   return (
     <div>
-      <h1 className="rounded-lg p-2 font-bold text-center m-1 hover:cursor-default group-hover:scale-[150%] transition duration-150">
+      <h1 className="rounded-lg p-2 font-bold text-center m-1 hover:cursor-default group-hover:scale-[150%] transition duration-100">
         JA WebDev
       </h1>
     </div>
   );
 }
 
+SocialLinks.propTypes = {
+  Icon: PropTypes.element,
+};
 export default NavBar;

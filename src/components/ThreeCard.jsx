@@ -39,7 +39,7 @@ function Card({ title, content, color }) {
     <div className="relative flex flex-col flex-1 group hover:scale-110 transition duration-300">
       <div
         id="card-container"
-        className={`relative p-4 flex flex-1 flex-col items-center border border-slate-700 rounded-lg bg-slate-900 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[-99] before:hover:z-[0] before:rounded-lg before:transition before:duration-300 ${shadowColors[color]}`}
+        className={`relative p-4 flex flex-1 flex-col items-center border border-slate-700 rounded-lg bg-gradient-to-tr from-gray-900 to-slate-800 opacity-80 hover:opacity-100 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[-99] before:hover:z-[0] before:rounded-lg before:transition before:duration-300 ${shadowColors[color]}`}
       >
         <div id="card-title-container" className="mb-2">
           <h1

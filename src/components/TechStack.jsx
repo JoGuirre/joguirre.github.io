@@ -56,18 +56,18 @@ function TechStack() {
       <div className="flex justify-around gap-16 items-center absolute w-full h-full">
         <button
           onClick={movePrev}
-          className="h-full bg-gradient-to-br from-customPurple from-[-50%] to-customBlue to-[150%] rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-30 transition duration-300"
+          className="h-full bg-gradient-to-br from-customPurple from-[-50%] to-customBlue to-[150%] rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-10 transition duration-300"
           disabled={isDisabled("prev")}
         >
-          <GrPrevious />
+          <GrPrevious size="1.2rem" />
           <span className="sr-only">prev</span>
         </button>
         <button
           onClick={moveNext}
-          className="h-full bg-gradient-to-tr from-customPurple from-[-50%] to-customBlue to-[150%] rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-30 transition duration-300"
+          className="h-full bg-gradient-to-tr from-customPurple from-[-50%] to-customBlue to-[150%] rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-10 transition duration-300"
           disabled={isDisabled("next")}
         >
-          <GrNext />
+          <GrNext size="1.2rem" />
           <span className="sr-only">next</span>
         </button>
       </div>
@@ -80,7 +80,7 @@ function TechStack() {
             return (
               <div
                 key={index}
-                className="carousel-item flex flex-col items-center justify-center hover:scale-110 hover:shadow-[0_0_1px_1px_#8fe9ff] transition duration-300 text-center relative border border-slate-700 h-20 bg-slate-900 rounded-lg snap-start"
+                className="carousel-item flex flex-col items-center justify-center hover:scale-110 hover:shadow-[0_0_1px_1px_#8fe9ff] transition duration-300 text-center relative border border-slate-700 h-20 bg-slate-900 bg-opacity-0 hover:opacity-100 hover:bg-opacity-100 rounded-lg snap-start"
               >
                 <a
                   href={tech.link}

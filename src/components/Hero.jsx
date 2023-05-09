@@ -5,7 +5,7 @@ function Hero() {
     <div id="home" className="h-screen flex">
       <div
         id="hero-card-container"
-        className="flex relative justify-between px-8 w-full mt-8 mb-20 mx-12 rounded-lg flex border border-slate-700 bg-slate-900 rounded-lg text-slate-300 overflow-hidden"
+        className="flex relative justify-between px-8 w-full mt-8 mb-20 mx-12 rounded-lg flex border border-slate-700 bg-gradient-to-tr from-gray-900 to-slate-800 transition duration-300 rounded-lg text-slate-300 overflow-hidden"
       >
         <div
           id="hero-card-container-bg-text"
@@ -40,17 +40,25 @@ function Hero() {
           id="right-side"
           className="flex flex-col justify-center items-center w-1/2"
         >
-          <p className="px-8 text-center text-lg font-semibold">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
-            beatae repellat distinctio culpa dolorem corporis voluptatem vel!
-            Asperiores dolore cupiditate, tempore possimus alias esse eligendi
-            repellat consequatur, doloribus molestias similique. Fuga, modi
-            quasi velit, soluta hic officiis vitae nesciunt officia maiores
-            excepturi debitis incidunt alias odio eveniet? At libero ab commodi!
-            Vel deleniti dicta voluptates corrupti magnam earum itaque deserunt!
-            Nemo consectetur enim soluta hic temporibus corrupti aperiam, neque
-            consequatur cumque reprehenderit ab consequuntur voluptas officia
-            vero excepturi saepe sint.
+          <p className="p-12 mr-12 border border-slate-700 bg-gradient-to-bl from-gray-900 to-slate-800 text-center shadow-[2px_2px_1px_1px_#000000] rounded-lg text-lg font-semibold">
+            Hey there! I'm Josh, a passionate web developer driven to craft
+            exceptional online experiences. With a decade in sunny San Diego, my
+            work is fueled by Floridian spirit, creativity, and adventure.
+            <br />
+            <br />
+            From encountering challenges in the hospitality industry to
+            discovering the power of programming, I recognized the immense
+            potential technology holds. It was outside the Navy where I found my
+            true passion for web development and the ability to create
+            captivating websites.
+            <br />
+            <br />
+            Now, I'm here to bring your web dreams to reality! With a deep
+            understanding of design principles, attention to detail, and
+            expertise in cutting-edge technologies, I'll collaborate with you to
+            create an electrifying online presence. Let's embark on this
+            exciting journey together and unlock the true potential of your
+            online presence!
           </p>
         </div>
       </div>
