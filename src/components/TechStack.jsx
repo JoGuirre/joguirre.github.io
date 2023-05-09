@@ -56,7 +56,7 @@ function TechStack() {
       <div className="flex justify-around gap-16 items-center absolute w-full h-full">
         <button
           onClick={movePrev}
-          className="h-full bg-gradient-to-br from-customPurple from-[-50%] to-customBlue to-[150%] rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-10 transition duration-300"
+          className="h-full shadow-[1px_1px_1px_1px_#000000] bg-gradient-to-br from-customPurple from-[-50%] to-customBlue to-[150%] rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-10 transition duration-300 hover:scale-105"
           disabled={isDisabled("prev")}
         >
           <GrPrevious size="1.2rem" />
@@ -64,7 +64,7 @@ function TechStack() {
         </button>
         <button
           onClick={moveNext}
-          className="h-full bg-gradient-to-tr from-customPurple from-[-50%] to-customBlue to-[150%] rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-10 transition duration-300"
+          className="h-full shadow-[1px_1px_1px_1px_#000000] bg-gradient-to-tr from-customPurple from-[-50%] to-customBlue to-[150%] rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-10 transition duration-300 hover:scale-105"
           disabled={isDisabled("next")}
         >
           <GrNext size="1.2rem" />
