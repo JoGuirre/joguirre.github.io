@@ -53,7 +53,7 @@ function TechStack() {
   }, []);
   return (
     <div id="techstack" className="relative my-12">
-      <div className="flex justify-around gap-16 items-center absolute w-full h-full">
+      <div className="flex justify-around lg:gap-16 gap-40 items-center absolute w-full h-full">
         <button
           onClick={movePrev}
           className="h-full shadow-[1px_1px_1px_1px_#000000] bg-gradient-to-br from-customPurple from-[-50%] to-customBlue to-[150%] rounded-md border border-slate-700 w-8 flex justify-center items-center disabled:opacity-10 transition duration-300 hover:scale-105"
@@ -71,7 +71,7 @@ function TechStack() {
           <span className="sr-only">next</span>
         </button>
       </div>
-      <div className="mx-96 flex relative overflow-hidden">
+      <div className="lg:mx-96 mx-24 flex relative overflow-hidden">
         <div
           ref={carousel}
           className="carousel-container relative px-4 h-24 flex items-center gap-2 overflow-hidden scroll-smooth z-0"
@@ -80,19 +80,21 @@ function TechStack() {
             return (
               <div
                 key={index}
-                className="carousel-item flex flex-col items-center justify-center hover:scale-110 hover:shadow-[0_0_1px_1px_#8fe9ff] transition duration-300 text-center relative border border-slate-700 h-20 bg-slate-900 bg-opacity-0 hover:opacity-100 hover:bg-opacity-100 rounded-lg snap-start"
+                className="carousel-item flex flex-col items-center justify-center hover:scale-110 hover:shadow-[0_0_1px_1px_#8fe9ff] transition duration-300 text-center relative border border-slate-700 lg:h-20 bg-slate-900 bg-opacity-0 hover:opacity-100 hover:bg-opacity-100 rounded-lg snap-start"
               >
                 <a
                   href={tech.link}
                   target="_blank"
-                  className="h-full w-full aspect-square block flex flex-col justify-around items-center z-0"
+                  className="lg:p-0 p-2 h-full w-full aspect-square block flex flex-col justify-around items-center z-0"
                 >
                   <tech.componentName
                     size="2rem"
                     color={tech.color}
                     className=""
                   />
-                  <h3 className="text-white text-xs">{tech.name}</h3>
+                  <h3 className="lg:block lg:visible none hidden text-white text-xs">
+                    {tech.name}
+                  </h3>
                 </a>
               </div>
             );

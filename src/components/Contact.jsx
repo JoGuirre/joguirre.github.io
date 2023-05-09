@@ -5,17 +5,21 @@ function Contact() {
   const [state, handleSubmit] = useForm("meqwpvaq");
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div id="contact" className="my-8">
-      <div className="border border-slate-700 flex mx-12 rounded-lg justify-around bg-gradient-to-tr from-gray-900 to-slate-800">
-        <div className="w-1/2 text-center flex flex-col justify-center items-center">
-          <h1 className="text-4xl font-bold mb-2">Need a website?</h1>
-          <h2 className="text-2xl font-semibold mb-4">Drop a line here!</h2>
-          <h3 className="w-2/3 text-lg">
+    <div id="contact" className="lg:my-8">
+      <div className="border border-slate-700 flex flex-col lg:flex-row mx-6 p-6 mb-4 lg:mx-12 rounded-lg lg:justify-around bg-gradient-to-tr from-gray-900 to-slate-800">
+        <div className="lg:w-1/2 text-center flex flex-col justify-center items-center">
+          <h1 className="text-3xl lg:text-4xl font-bold mb-2">
+            Need a website?
+          </h1>
+          <h2 className="text-xl lg:text-2xl font-semibold mb-4">
+            Drop a line here!
+          </h2>
+          <h3 className="lg:w-2/3 lg:text-lg">
             Whether you need a website built, or need work done on an existing
             website, I'm your guy
           </h3>
         </div>
-        <div className="w-1/3 my-12 py-8 px-12 border border-slate-700 bg-gradient-to-bl from-gray-900 to-slate-800 shadow-[2px_2px_1px_1px_#000000] rounded-lg">
+        <div className="lg:w-1/3 my-8 lg:my-12 lg:py-8 lg:px-12 px-6 border border-slate-700 bg-gradient-to-bl from-gray-900 to-slate-800 shadow-[2px_2px_1px_1px_#000000] rounded-lg">
           <form
             id="contact-form"
             action="https://formspree.io/f/meqwpvaq"

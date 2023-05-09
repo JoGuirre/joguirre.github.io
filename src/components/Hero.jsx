@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div id="home" className="lg:h-screen flex">
+    <div id="home" className="lg:h-screen lg:mt-0 mt-16 flex">
       <div
         id="hero-card-container"
         className="relative flex flex-col items-center justify-around lg:justify-center w-full rounded-lg border border-slate-700 bg-gradient-to-tr from-gray-900 to-slate-800 text-slate-300 overflow-hidden m-6 p-8 lg:flex-row lg:justify-between lg:px-8 lg:mt-8 mb-20 lg:mx-12 lg:transition lg:duration-300"
@@ -40,7 +40,7 @@ function Hero() {
           id="right-side"
           className="lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-1/2"
         >
-          <p className="lg:p-12 p-6 lg:mr-12 border border-slate-700 bg-gradient-to-bl from-gray-900 to-slate-800 text-center shadow-[2px_2px_1px_1px_#000000] rounded-lg text-lg font-medium lg:font-semibold">
+          <p className="lg:p-12 p-4 lg:mr-12 border border-slate-700 bg-gradient-to-bl from-gray-900 to-slate-800 text-center shadow-[2px_2px_1px_1px_#000000] rounded-lg text-md font-medium lg:font-semibold">
             Hey there! I'm Josh, a passionate web developer driven to craft
             exceptional online experiences. With a decade in sunny San Diego, my
             work is fueled by Floridian spirit, creativity, and adventure.

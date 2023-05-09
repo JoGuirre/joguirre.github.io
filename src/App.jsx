@@ -7,7 +7,7 @@ import TechStack from "./components/TechStack";
 
 function App() {
   return (
-    <div className=" bg-gradient-to-tr from-customPurple to-customBlue">
+    <div className="overflow-hidden bg-gradient-to-tr from-customPurple to-customBlue">
       <div className="bg-gradient-to-tl from-black via-transparent to-black">
         <div
           id="app-container"
