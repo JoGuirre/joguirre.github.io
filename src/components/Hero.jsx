@@ -2,20 +2,20 @@ import React from "react";
 
 function Hero() {
   return (
-    <div id="home" className="h-screen flex">
+    <div id="home" className="lg:h-screen flex">
       <div
         id="hero-card-container"
-        className="flex relative justify-between px-8 w-full mt-8 mb-20 mx-12 rounded-lg flex border border-slate-700 bg-gradient-to-tr from-gray-900 to-slate-800 transition duration-300 rounded-lg text-slate-300 overflow-hidden"
+        className="relative flex flex-col items-center justify-around lg:justify-center w-full rounded-lg border border-slate-700 bg-gradient-to-tr from-gray-900 to-slate-800 text-slate-300 overflow-hidden m-6 p-8 lg:flex-row lg:justify-between lg:px-8 lg:mt-8 mb-20 lg:mx-12 lg:transition lg:duration-300"
       >
         <div
           id="hero-card-container-bg-text"
-          className="absolute top-0 text-slate-400 text-opacity-[2%] font-bold text-[300px]"
+          className="absolute text-slate-400 text-opacity-[5%] text-[150px] lg:text-opacity-[2%] font-bold lg:text-[300px] bottom-0 lg:top-0"
         >
           JA WEBDEV
         </div>
         <div
           id="left-side"
-          className="flex flex-col justify-center items-center w-1/2 z-10"
+          className="flex flex-col justify-center items-center mb-6 lg:mb-0 lg:w-1/2 z-10"
         >
           <h1 className="text-5xl font-bold mb-6">
             Hi, I'm{" "}
@@ -23,24 +23,24 @@ function Hero() {
               Josh
             </span>
           </h1>
-          <h2 className="text-2xl font-semibold ml-4 mb-0 hover:cursor-default hover:scale-110 hover:bg-gradient-to-br hover:from-[#ff00f7] hover:to-[#00ccff] hover:bg-clip-text hover:text-transparent transition duration-300 text-center">
+          <h2 className="text-2xl font-semibold lg:ml-4 lg:mb-0 lg:hover:cursor-default lg:hover:scale-110 lg:hover:bg-gradient-to-br lg:hover:from-[#ff00f7] lg:hover:to-[#00ccff] lg:hover:bg-clip-text lg:hover:text-transparent lg:transition lg:duration-300 lg:text-center">
             Web Developer
           </h2>
-          <h3 className="text-xl font-semibold ml-4 text-center">
-            <span className="hover:cursor-default hover:scale-110 hover:bg-gradient-to-br hover:from-[#ff00f7] hover:to-[#00ccff] hover:bg-clip-text hover:text-transparent transition duration-300">
+          <h3 className="text-xl font-semibold lg:ml-4 text-center">
+            <span className="lg:hover:cursor-default lg:hover:scale-110 lg:hover:bg-gradient-to-br lg:hover:from-[#ff00f7] lg:hover:to-[#00ccff] lg:hover:bg-clip-text lg:hover:text-transparent lg:transition lg:duration-300">
               Front-End
             </span>{" "}
             |{" "}
-            <span className="hover:cursor-default hover:scale-110 hover:bg-gradient-to-br hover:from-[#ff00f7] hover:to-[#00ccff] hover:bg-clip-text hover:text-transparent transition duration-300">
+            <span className="lg:hover:cursor-default lg:hover:scale-110 lg:hover:bg-gradient-to-br lg:hover:from-[#ff00f7] lg:hover:to-[#00ccff] lg:hover:bg-clip-text lg:hover:text-transparent lg:transition lg:duration-300">
               Back-End
             </span>
           </h3>
         </div>
         <div
           id="right-side"
-          className="flex flex-col justify-center items-center w-1/2"
+          className="lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-1/2"
         >
-          <p className="p-12 mr-12 border border-slate-700 bg-gradient-to-bl from-gray-900 to-slate-800 text-center shadow-[2px_2px_1px_1px_#000000] rounded-lg text-lg font-semibold">
+          <p className="lg:p-12 p-6 lg:mr-12 border border-slate-700 bg-gradient-to-bl from-gray-900 to-slate-800 text-center shadow-[2px_2px_1px_1px_#000000] rounded-lg text-lg font-medium lg:font-semibold">
             Hey there! I'm Josh, a passionate web developer driven to craft
             exceptional online experiences. With a decade in sunny San Diego, my
             work is fueled by Floridian spirit, creativity, and adventure.

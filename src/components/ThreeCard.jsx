@@ -3,7 +3,10 @@ import { aboutContent } from "../content/aboutContent";
 
 function ThreeCard() {
   return (
-    <div id="about" className="flex justify-center mb-4 mx-12 gap-12">
+    <div
+      id="about"
+      className="flex flex-col lg:flex-row justify-center mx-6 mb-4 lg:mx-12 gap-12"
+    >
       {aboutContent.map((section) => {
         return (
           <Card
@@ -36,10 +39,10 @@ function Card({ title, content, color }) {
     orange: "via-[#ff9100]",
   };
   return (
-    <div className="relative flex flex-col flex-1 group hover:scale-110 transition duration-300">
+    <div className="relative flex flex-col flex-1 group hover:scale-[101%] lg:hover:scale-110 transition duration-300">
       <div
         id="card-container"
-        className={`relative p-4 flex flex-1 flex-col items-center border border-slate-700 rounded-lg bg-gradient-to-bl from-gray-900 to-slate-800 text-center shadow-[2px_2px_1px_1px_#000000] hover:shadow-none opacity-80 hover:opacity-100 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[-99] before:hover:z-[0] before:rounded-lg before:transition before:duration-300 ${shadowColors[color]}`}
+        className={`relative p-6 pb-12 lg:pb-0 lg:p-4 flex flex-1 flex-col items-center border border-slate-700 rounded-lg bg-gradient-to-bl from-gray-900 to-slate-800 text-center shadow-[2px_2px_1px_1px_#000000] hover:shadow-none opacity-80 hover:opacity-100 before:absolute before:top-0 before:left-0 before:w-full before:h-full before:z-[-99] before:hover:z-[0] before:rounded-lg before:transition before:duration-300 ${shadowColors[color]}`}
       >
         <div id="card-title-container" className="mb-2">
           <h1

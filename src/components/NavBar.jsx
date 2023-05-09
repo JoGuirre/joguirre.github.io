@@ -14,13 +14,13 @@ function NavBar() {
   return (
     <div
       id="navbar-container"
-      className=" z-50 sticky top-0 flex justify-center text-white text-opacity-40 hover:text-opacity-100 transition duration-150"
+      className="z-50 sticky top-0 flex justify-center text-slate-300 lg:text-white lg:text-opacity-40 lg:hover:text-opacity-100 lg:transition lg:duration-150"
     >
-      <div className="flex w-full h-12 justify-between bg-black relative group">
-        <div className="absolute bg-gradient-to-r from-transparent via-customBlue to-transparent opacity-60 group-hover:opacity-100 transition duration-300 bottom-0 h-[1px] w-full">
+      <div className="flex w-full h-16 lg:h-12 justify-between px-2 lg:px-0 items-center bg-black relative lg:group">
+        <div className="absolute bg-gradient-to-r from-transparent via-customBlue to-transparent opacity-60 lg:group-hover:opacity-100 lg:transition lg:duration-300 bottom-0 h-[1px] w-full">
           &nbsp;
         </div>
-        <div className="pl-40 flex">
+        <div className="lg:pl-40 lg:flex">
           <ul className="flex gap-4">
             {socialLinksItems.map((item) => {
               return (
@@ -33,10 +33,10 @@ function NavBar() {
             })}
           </ul>
         </div>
-        <div className="flex group">
+        <div className="flex lg:group">
           <MyLogo />
         </div>
-        <div className="pr-40 flex">
+        <div className="lg:pr-40 flex">
           <NavBarList />
         </div>
       </div>
@@ -47,10 +47,10 @@ function NavBar() {
 function NavBarList() {
   const navBarListItems = ["home", "about", "contact"];
   return (
-    <ul className="flex gap-4">
+    <ul className="flex gap-4 lg:mr-0 mr-4">
       {navBarListItems.map((item) => {
         return (
-          <li className="rounded-lg p-2 text-center m-1 hover:cursor-pointer hover:bg-gray-600 transition duration-200">
+          <li className="rounded-lg lg:p-2 lg:text-center lg:m-1 lg:hover:cursor-pointer lg:hover:bg-gray-600 lg:transition lg:duration-200">
             <a href={`#${item}`}>{item}</a>
           </li>
         );
@@ -61,8 +61,8 @@ function NavBarList() {
 
 function SocialLinks({ name, Icon, link }) {
   return (
-    <li className="rounded-lg p-2 text-center m-1 hover:cursor-pointer hover:bg-gray-600 transition duration-200">
-      <a href={link} target="_blank" className="flex items-center gap-x-2">
+    <li className="rounded-lg lg:p-2 lg:text-center lg:m-1 lg:hover:cursor-pointer lg:hover:bg-gray-600 lg:transition lg:duration-200">
+      <a href={link} target="_blank" className="flex items-center lg:gap-x-2">
         <div>
           <Icon size="1.1rem" />
         </div>
@@ -75,7 +75,7 @@ function SocialLinks({ name, Icon, link }) {
 function MyLogo() {
   return (
     <div>
-      <h1 className="rounded-lg p-2 font-bold text-center m-1 hover:cursor-default group-hover:scale-[150%] transition duration-100">
+      <h1 className="lg:rounded-lg lg:p-2 text-xl font-bold lg:text-center lg:m-1 lg:hover:cursor-default lg:group-hover:scale-[150%] lg:transition lg:duration-100">
         JA WebDev
       </h1>
     </div>

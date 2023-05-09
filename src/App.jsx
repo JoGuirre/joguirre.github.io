@@ -7,21 +7,19 @@ import TechStack from "./components/TechStack";
 
 function App() {
   return (
-    <div className="bg-[url(./assets/bggrid.svg)] bg-contain">
-      <div className="bg-gradient-to-tr from-customPurple to-customBlue">
-        <div className="bg-gradient-to-tl from-black via-transparent to-black">
-          <div
-            id="app-container"
-            className="flex flex-col bg-black bg-opacity-60 z-[-999]"
-          >
-            <NavBar />
-            <Hero />
-            <ThreeCard />
-            <TechStack />
+    <div className=" bg-gradient-to-tr from-customPurple to-customBlue">
+      <div className="bg-gradient-to-tl from-black via-transparent to-black">
+        <div
+          id="app-container"
+          className="flex flex-col bg-black bg-opacity-60 z-[-999]"
+        >
+          <NavBar />
+          <Hero />
+          <ThreeCard />
+          <TechStack />
 
-            {/* <Projects /> */}
-            <Contact />
-          </div>
+          {/* <Projects /> */}
+          <Contact />
         </div>
       </div>
     </div>
