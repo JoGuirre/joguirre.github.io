@@ -59,7 +59,7 @@ function Card({ title, content, color }) {
           </div>
         </div>
         <div id="card-content-container">
-          <p className="text-md text-slate-300 text-opacity-60 group-hover:text-opacity-100 transition duration-300 px-4 text-center">
+          <p className="text-md text-slate-300 text-opacity-60 group-hover:text-opacity-100 transition duration-300 px-4 text-center pb-6">
             {content}
           </p>
         </div>
